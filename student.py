@@ -1,6 +1,6 @@
 """student.py
 
-Math 589B Assignment 3 (Autograded)
+Math 589B Programming Assignment 2 (Autograded)
 
 Implement numerical quadrature routines and polynomial interpolation evaluation.
 
