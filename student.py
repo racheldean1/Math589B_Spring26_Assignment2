@@ -1,23 +1,22 @@
-"""
-student.py
+"""student.py
 
-Numerical quadrature + interpolation.
+Math 589B Programming Assignment 2 (Autograded)
 
-We implement:
-- Composite Simpson
-- Gauss–Legendre quadrature (via numpy leggauss)
-- Romberg integration (trapezoid + Richardson extrapolation)
-- Polynomial interpolation evaluation at (1) equispaced nodes and (2) Chebyshev–Lobatto nodes
-  using barycentric interpolation for stability.
-- Integral of an interpolating polynomial from its values at nodes.
+Implement numerical quadrature routines and polynomial interpolation evaluation.
 
-Allowed: numpy, mpmath, standard library.
-Not allowed: high-level integrators like mpmath.quad / scipy.integrate.quad.
+Rules:
+- Do not change the required function names/signatures.
+- Do not print from your functions.
+- You may use numpy and mpmath.
+
+Tip: Barycentric interpolation is the intended approach for stability.
 """
 
 from __future__ import annotations
 
+import math
 from typing import Callable
+
 import numpy as np
 import mpmath as mp
 
